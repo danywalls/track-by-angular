@@ -1,0 +1,8 @@
+<div>
+  <input #colorName /><button (click)="addColor(colorName)">Add</button>
+  <ul>
+    <li *ngFor="let color of colors; trackBy: colorTrackBy">
+      {{ color.name }}
+    </li>
+  </ul>
+</div>
